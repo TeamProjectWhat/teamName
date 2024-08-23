@@ -18,8 +18,12 @@ public class MainController {
 	}
 	
 	@GetMapping("/board")
-	@ResponseBody
 	public String board() {
 		return "board";
+	}
+	
+	@GetMapping("/member")
+	public String member() {
+		return "member";
 	}
 }
